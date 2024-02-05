@@ -8,6 +8,8 @@
 //     }
     //Wrapper Interface
     interface computeEngineComponents{
-        // ComputationRequest computationRequest(dataLoadResponse data);
-        // ComputationResponse performComputation(dataForComputation data);
+    //types are not determined yet
+    //int is not the final type but let it be int for now
+        ComputationRequest computationRequest(int data);
+        ComputationResponse performComputation(int data);
     }
