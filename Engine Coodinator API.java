@@ -1,19 +1,19 @@
 //Prototype the Use Case
-    public void initiateComputation(transferRespose dataTransfered) {
-        // Create a compuation request 
-        ComputationRequest computationRequest = new ComputationRequest(dataTransfered.getData());
+    // public void initiateComputation(transferRespose dataTransfered) {
+    //     // Create a compuation request 
+    //     ComputationRequest computationRequest = new ComputationRequest(dataTransfered.getData());
 
-        // Perform the actual computation
-        ComputationResponse computationResponse = computeEngine.performComputation(computationRequest);
-    }
+    //     // Perform the actual computation
+    //     ComputationResponse computationResponse = computeEngine.performComputation(computationRequest);
+    // }
     //Wrapper Interface
-    public Interface computeEngineComponents{
-        ComputationRequest computationRequest(dataLoadResponse data);
-        ComputationResponse performComputation(dataForComputation data);
+     interface ComputeEngineComponents{
+        // ComputationRequest computationRequest(dataLoadResponse data);
+        // ComputationResponse performComputation(dataForComputation data);
     }
 
     
-    
+
 
 
 
