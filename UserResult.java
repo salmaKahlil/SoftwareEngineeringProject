@@ -1,10 +1,7 @@
-public interface UserResult {
+interface UserResult {
 
-  UserResult = getUserResult();
+  //UserResult = getUserResult();
 
-    public enum JobStatus {
-        COMPLETED, FAILED
-
-
-    }
+    
 }
+
