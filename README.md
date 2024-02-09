@@ -19,7 +19,7 @@ Output:
 
 ## System Diagram:
 
-![image](https://github.com/salmaKahlil/SoftwareEngineeringProject/assets/157662822/7f43b88f-69f2-47c4-8c56-8ebc80a01090)
+![System Diagram](<System Diagram.png>)
 
 
 
