@@ -1,3 +1,3 @@
 public interface ComputeEngine {
-    String compute (int number);
+    String compute(int number);
 }
