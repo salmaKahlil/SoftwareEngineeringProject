@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public interface ComputeEngine {
-    String compute(int number);
+    ArrayList<String> compute(ArrayList<Integer> number);
 }
