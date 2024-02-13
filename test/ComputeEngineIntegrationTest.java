@@ -4,26 +4,26 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
-import org.mockito.internal.matchers.Null;
+//import org.mockito.internal.matchers.Null;
 
 public class ComputeEngineIntegrationTest  {
     
         
-        public void TestComputeEngineIntegration()
+        public void testComputeEngineIntegration()
         {
            
             //initializing the data
-            int [] inputConfig={1,10,25};
+            int[] inputConfig = {1,10,25};
             //not specifying delimter
-            String delimeter=null;
+            String delimeter = null;
           //creating instances of components
        
        ComputeEngineImp computeEngine = new ComputeEngineImp();
-       DataImp dataimp= new DataImp();
+       DataImp dataImp = new DataImp();
        computeEngine.compute(null);
-       dataimp.computationEndMessage(null, delimeter);
-       IntegersFromTheUser numbers=null;
-       dataimp.dataIn(numbers);
+       dataImp.computationEndMessage(null, delimeter);
+       IntegersFromTheUser numbers = null;
+       dataImp.dataIn(numbers);
        String outputData=computeEngine.compute(null);
        assertNotNull(null);
 
