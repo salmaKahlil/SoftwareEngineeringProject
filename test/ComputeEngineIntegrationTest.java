@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
+import org.mockito.internal.matchers.Null;
 
 public class ComputeEngineIntegrationTest  {
     
@@ -17,14 +18,14 @@ public class ComputeEngineIntegrationTest  {
             String delimeter=null;
           //creating instances of components
        
-       ComputeEngineImp computeengine = new ComputeEngineImp();
-       DataImp     dataimp= new DataImp();
-       computeengine.compute(null);
+       ComputeEngineImp computeEngine = new ComputeEngineImp();
+       DataImp dataimp= new DataImp();
+       computeEngine.compute(null);
        dataimp.computationEndMessage(null, delimeter);
-    IntegersFromTheUser numbers=null;
-     dataimp.dataIn(numbers);
-     String outputString=computeengine.compute(null);
-      assertNotNull(null);
+       IntegersFromTheUser numbers=null;
+       dataimp.dataIn(numbers);
+       String outputData=computeEngine.compute(null);
+       assertNotNull(null);
 
         }
 
