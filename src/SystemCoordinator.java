@@ -1,3 +1,3 @@
 public interface SystemCoordinator {
-    ComputeMessage runComputeEngine(ComputeRequest request);
+    public ComputeMessage runComputeEngine(ComputeRequest request);
 }
