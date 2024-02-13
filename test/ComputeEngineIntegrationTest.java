@@ -6,8 +6,8 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 public class ComputeEngineIntegrationTest  {
-    {
-        @Test
+    
+        
         public void TestComputeEngineIntegration()
         {
            
@@ -21,12 +21,12 @@ public class ComputeEngineIntegrationTest  {
        DataImp     dataimp= new DataImp();
        computeengine.compute(null);
        dataimp.computationEndMessage(null, delimeter);
-    IntegersFromTheUser numbers;
+    IntegersFromTheUser numbers=null;
      dataimp.dataIn(numbers);
      String outputString=computeengine.compute(null);
       assertNotNull(null);
 
         }
 
-        
-}
+    } 
+
