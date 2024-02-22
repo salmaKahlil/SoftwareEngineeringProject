@@ -3,8 +3,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SystemCoordinatorTest {
+
     @Test   
-    public void TestRunComputeEngine() {
+    public void testRunComputeEngine() {
         Data dataTest = Mockito.mock(Data.class);
 		ComputeEngine computeEngineTest = Mockito.mock(ComputeEngine.class);
 

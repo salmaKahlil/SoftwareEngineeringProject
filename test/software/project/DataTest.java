@@ -5,14 +5,14 @@ import org.mockito.Mockito;
 public class DataTest {
     
     @Test
-	public void TestDataIn() {
+	public void testDataIn() {
 		IntegersFromTheUser inputConfig = Mockito.mock(IntegersFromTheUser.class);
 		Data data = new DataImp();
 		Assert.assertEquals(3, data.dataIn(inputConfig));
 	}
 
     @Test
-	public void TestComputationEndMessage() {
+	public void testComputationEndMessage() {
 		OutputDetails outputDetailsTest = Mockito.mock(OutputDetails.class);
 		String results = "";
 		Data data = new DataImp();
@@ -20,4 +20,3 @@ public class DataTest {
 		Assert.assertEquals(ComputeMessage.SUCCESS, data.computationEndMessage(outputDetailsTest, results));
 	}
 }
-
