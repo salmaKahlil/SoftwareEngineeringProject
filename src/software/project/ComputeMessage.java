@@ -1,5 +1,7 @@
+
+
 public enum ComputeMessage {
-    SUCCESS,
-    FAILURE
     
+    SUCCESS,
+    FAILURE 
 } 
