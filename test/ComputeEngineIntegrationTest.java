@@ -1,32 +1,28 @@
 package test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.when;
 
+//import java.util.ArrayList;
+//import java.util.List;
+
+//import org.junit.Assert;
 import org.junit.Test;
-//import org.mockito.internal.matchers.Null;
+import org.mockito.Mockito;
 
 public class ComputeEngineIntegrationTest  {
-    
+    @Test
         
         public void testComputeEngineIntegration()
         {
-           
-            //initializing the data
-            int[] inputConfig = {1,10,25};
-            //not specifying delimter
-            String delimeter = null;
-          //creating instances of components
-       
-       ComputeEngineImp computeEngine = new ComputeEngineImp();
-       DataImp dataImp = new DataImp();
-       computeEngine.compute(null);
-       dataImp.computationEndMessage(null, delimeter);
-       IntegersFromTheUser numbers = null;
-       dataImp.dataIn(numbers);
-       String outputData=computeEngine.compute(null);
-       assertNotNull(null);
-
+      ComputeEngineImp computeEngine = new ComputeEngineImp();
+      DataImp dataImp = new DataImp();
+      SystemIntegration systemInt = new SystemIntegration(dataImp, computeEngine);
+      IntegersFromTheUser input = new IntegersFromTheUser(1,10,25);
+      OutputDetails output = new OutputDetails();
+     // ComputeRequest mockRequest = Mockito.mock(ComputeRequest.class);
+	 // 	when(mockRequest.getInputfromTheUser()).thenReturn(input);
+		//  when(mockRequest.getOutputDetails()).thenReturn(output);
+		
         }
 
     } 

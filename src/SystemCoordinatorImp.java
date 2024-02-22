@@ -1,6 +1,14 @@
 public class SystemCoordinatorImp implements SystemCoordinator {
+    /*i need to fix this */
+ //private final Data ds;
+// private final ComputeEngine ce;
+ //public SystemCoordinatorImp(Data ds, ComputeEngine ce)
+ //{
+ //   this.ds = ds;
+ //   this.ce = ce;
+ //}
+    @Override
     public ComputeMessage runComputeEngine(ComputeRequest request){
-        request = new ComputeRequest();
-        return null;
+        return ComputeMessage.FAILURE;
 }
 }
