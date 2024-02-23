@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class SystemCoordinatorImp implements SystemCoordinator {
 
@@ -12,6 +12,18 @@ public class SystemCoordinatorImp implements SystemCoordinator {
    
     @Override
     public ComputeMessage runComputeEngine(ComputeRequest request){
-        return ComputeMessage.FAILURE;
+       
+        IntegersFromTheUser input = request.getInputConfig(); 
+        OutputDetails output = request.getOutputConfig(); 
+        String delimiter = request.getDelimeter(); 
+        ArrayList<Integer> nums = ds.dataIn(input);
+        Integer digit = nums.get(0); //Digit we search for is the first one in the array of inputs
+        String result;
+        for (Integer num : nums) {
+             result = ce.compute(digit, num);
+             output.OutputDetailsMethod(delimiter, result, String.valueOf(num));
+        }
+        return ComputeMessage.SUCCESS;
+        
     }
-}
+}   

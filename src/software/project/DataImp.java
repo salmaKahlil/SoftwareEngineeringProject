@@ -1,16 +1,15 @@
-import java.util.Collections;
+import java.util.ArrayList;
 
 public class DataImp implements Data{
 
     @Override
-    public Iterable<Integer>  dataIn(IntegersFromTheUser numbers) {
-
-        return Collections.emptyList();
+    public ArrayList<Integer>  dataIn(IntegersFromTheUser numbers) {
+       return numbers.getIntegersFromTheUser();
     }
 
     @Override
-    public ComputeMessage computationEndMessage(OutputDetails resultDest, String results){
-        
-        return ComputeMessage.FAILURE;
+    public ComputeMessage computationEndMessage(OutputDetails resultDest,  String input, String results ){
+        resultDest.OutputDetailsMethod(results, input, results);
+        return ComputeMessage.SUCCESS;
     }
 }

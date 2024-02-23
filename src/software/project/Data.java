@@ -1,7 +1,7 @@
 
-
+import java.util.ArrayList;
 public interface Data {
 
-    Iterable<Integer> dataIn(IntegersFromTheUser numbers);
-    ComputeMessage computationEndMessage(OutputDetails resultDest, String results);
+    ArrayList<Integer> dataIn(IntegersFromTheUser numbers);
+    ComputeMessage computationEndMessage(OutputDetails resultDest, String input, String results);
 }
