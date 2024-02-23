@@ -5,12 +5,12 @@ import java.io.IOException;
 public class OutputDetails {
     
     private String filePath;
-    
+
     public OutputDetails(String filePath){
         this.filePath = filePath;
     }
 
-    public void OutputDetailsMethod(String delimiter, String result, String input ){
+    public void outputDetailsMethod(String delimiter, String result, String input ){
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(input);
             writer.write(":");
