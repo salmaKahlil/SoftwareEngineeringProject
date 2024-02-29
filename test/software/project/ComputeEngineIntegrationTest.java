@@ -1,31 +1,29 @@
-// import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.when;
 
-// import java.util.ArrayList;
-// import org.junit.Assert;
-// import org.junit.Test;
-// import org.mockito.Mockito;
+import org.junit.Assert;
+import org.junit.Test;
+import org.mockito.Mockito;
 
-// public class ComputeEngineIntegrationTest {
-//     @Test
-//     public void testComputeWorkflow() {
-//         ComputeEngine engine = new ComputeEngineImp();
-//         NewData testDs = new NewData();
-//         SystemCoordinator coordinator = new SystemCoordinatorImp(testDs, engine);
-//         InputForTest input = new InputForTest(1, 10, 25);
-//         OutputDetailsForTest output = new OutputDetailsForTest();
-
-//         ComputeRequest mockRequest = Mockito.mock(ComputeRequest.class);
-//         when(mockRequest.getInputConfig()).thenReturn(input);
-//        // when(mockRequest.getOutputConfig()).thenReturn(output);
-
-//         ComputeMessage result = coordinator.runComputeEngine(mockRequest);
-//         Assert.assertEquals(ComputeMessage.SUCCESS, result);
-//         ArrayList<String> expected = new ArrayList<>();
-// 		expected.add("1");
-// 		expected.add("10");
-// 		expected.add("25");
+public class ComputeEngineIntegrationTest {
+    @Test
+    public void testComputeWorkflow() {
+        ComputeEngine engine = new ComputeEngineImp();
+        Data testDs = new DataImp();
+        SystemCoordinator coordinator = new SystemCoordinatorImp(testDs, engine);
+        IntegersFromTheUser input = new IntegersFromTheUser("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+        OutputDetails output = new OutputDetails("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\output");
        
-//         Assert.assertEquals(expected, output.getOutputDetails());
 
-//     }
-// }
+        ComputeRequest mockRequest = Mockito.mock(ComputeRequest.class);
+        
+        when(mockRequest.getInputConfig()).thenReturn(input);
+        when(mockRequest.getOutputConfig()).thenReturn(output);
+        when(mockRequest.getDelimeter()).thenReturn(";");
+
+        ComputeMessage result = coordinator.runComputeEngine(mockRequest);
+
+        Assert.assertEquals(ComputeMessage.SUCCESS, result);
+
+
+    }
+}

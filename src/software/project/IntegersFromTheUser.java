@@ -10,7 +10,6 @@ public class IntegersFromTheUser {
         this.inputConfig.addAll(p);
     }
 
-    // Constructor to read integers from a file
     public IntegersFromTheUser(String filePath) {
         try {
             Scanner scanner = new Scanner(new File(filePath));
