@@ -11,7 +11,7 @@ public class OutputDetails {
     }
 
     public void outputDetailsMethod(String delimiter, String result, String input ){
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             writer.write(input);
             writer.write(":");
             writer.write(result);
