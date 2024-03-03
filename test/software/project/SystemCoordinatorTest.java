@@ -12,9 +12,13 @@ public class SystemCoordinatorTest {
         SystemCoordinator coordinator = new SystemCoordinatorImp(dataTest, computeEngineTest);
 
         ComputeRequest requestTest = Mockito.mock(ComputeRequest.class);
+        IntegersFromTheUser inputConfig = new IntegersFromTheUser("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+        OutputDetails outputConfig = new OutputDetails("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+        requestTest = new ComputeRequestImp(inputConfig, outputConfig, ";");
+
         ComputeMessage result = coordinator.runComputeEngine(requestTest);
 
 
-        Assert.assertEquals(result, ComputeMessage.SUCCESS);
+        Assert.assertEquals(ComputeMessage.SUCCESS, result);
     }
 }

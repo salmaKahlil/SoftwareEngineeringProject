@@ -9,7 +9,7 @@ public class DataImp implements Data{
 
     @Override
     public ComputeMessage computationEndMessage(OutputDetails resultDest,  String input, String results ){
-        resultDest.OutputDetailsMethod(results, input, results);
+        resultDest.outputDetailsMethod(results, input, results);
         return ComputeMessage.SUCCESS;
     }
 }
