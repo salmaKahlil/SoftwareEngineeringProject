@@ -25,7 +25,9 @@ public class SystemCoordinatorImp implements SystemCoordinator {
         if (!nums.isEmpty()) {
             digit = nums.get(0);
         } else {
+
             digit = 0;
+
         }
         String result;
         for (Integer num : nums) {
