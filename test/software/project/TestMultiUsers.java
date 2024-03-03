@@ -27,15 +27,15 @@ public class TestMultiUsers {
 
 	@Test
 	public void compareMultiAndSingleThreaded() throws Exception {
-		int nThreads = 4;
+		int numThreads = 4;
 		List<TestUser> testUsers = new ArrayList<>();
-		for (int i = 0; i < nThreads; i++) {
+		for (int i = 0; i < numThreads; i++) {
 			testUsers.add(new TestUser(coordinator));
 		}
 		
 		// Run single threaded
 		String singleThreadFilePrefix = "testMultiUser.compareMultiAndSingleThreaded.test.singleThreadOut.tmp";
-		for (int i = 0; i < nThreads; i++) {
+		for (int i = 0; i < numThreads; i++) {
 			File singleThreadedOut = new File(singleThreadFilePrefix + i);
 			singleThreadedOut.createNewFile(); // Create the file
 			singleThreadedOut.deleteOnExit();
@@ -47,7 +47,7 @@ public class TestMultiUsers {
 		ExecutorService threadPool = Executors.newCachedThreadPool();
 		List<Future<?>> results = new ArrayList<>();
 		String multiThreadFilePrefix = "testMultiUser.compareMultiAndSingleThreaded.test.multiThreadOut.tmp";
-		for (int i = 0; i < nThreads; i++) {
+		for (int i = 0; i < numThreads; i++) {
 			File multiThreadedOut = new File(multiThreadFilePrefix + i);
 			multiThreadedOut.createNewFile(); // Create the file
 			multiThreadedOut.deleteOnExit();
@@ -65,14 +65,14 @@ public class TestMultiUsers {
 		});
 		
 		
-		List<String> singleThreaded = loadAllOutput(singleThreadFilePrefix, nThreads);
-		List<String> multiThreaded = loadAllOutput(multiThreadFilePrefix, nThreads);
+		List<String> singleThreaded = loadAllOutput(singleThreadFilePrefix, numThreads);
+		List<String> multiThreaded = loadAllOutput(multiThreadFilePrefix, numThreads);
 		Assert.assertEquals(singleThreaded, multiThreaded);
 	}
 
-	private List<String> loadAllOutput(String prefix, int nThreads) throws IOException {
+	private List<String> loadAllOutput(String prefix, int numThreads) throws IOException {
 		List<String> result = new ArrayList<>();
-		for (int i = 0; i < nThreads; i++) {
+		for (int i = 0; i < numThreads; i++) {
 			File multiThreadedOut = 
 					new File(prefix + i);
 			result.addAll(Files.readAllLines(multiThreadedOut.toPath()));
