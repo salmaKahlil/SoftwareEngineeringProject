@@ -1,5 +1,4 @@
-
-
+package software.project;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,15 +9,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 public class TestMultiUsers {
 
 	private SystemCoordinator coordinator;
 	
-	@Before
+	@BeforeEach
 	public void initializeComputeEngine() {
 		Data dataTest = Mockito.mock(Data.class);
 		ComputeEngine computeEngineTest = Mockito.mock(ComputeEngine.class);
