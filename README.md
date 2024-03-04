@@ -21,7 +21,8 @@ Output:
 
 ![System Diagram](<System Diagram.png>)
 
-
+## Threading
+The engine support multithreading with an upper bound of 4 threads running concurrently. 
 
 
 
