@@ -1,4 +1,4 @@
-
+package software.project;
 
 public interface ComputeRequest{
 	IntegersFromTheUser getInputConfig();
