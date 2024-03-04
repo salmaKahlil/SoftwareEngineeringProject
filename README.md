@@ -21,7 +21,8 @@ Output:
 
 ![System Diagram](<System Diagram.png>)
 
-
+## Threading
+The engine accepts input from multiUsers running on exactly foro threads. 
 
 
 
