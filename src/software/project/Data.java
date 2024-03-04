@@ -1,4 +1,4 @@
-
+package software.project;
 import java.util.ArrayList;
 public interface Data {
 

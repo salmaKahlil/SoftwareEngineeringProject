@@ -1,7 +1,8 @@
+package software.project;
 import java.util.ArrayList;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 public class DataTest {
