@@ -22,7 +22,7 @@ Output:
 ![System Diagram](<System Diagram.png>)
 
 ## Threading
-The engine accepts input from multiUsers running on exactly four threads. 
+The engine support multithreading with an upper bound of 4 threads running concurrently. 
 
 
 
