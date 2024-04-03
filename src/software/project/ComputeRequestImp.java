@@ -1,3 +1,5 @@
+package software.project;
+
 public class ComputeRequestImp implements ComputeRequest {
 
     private IntegersFromTheUser inputConfig;
