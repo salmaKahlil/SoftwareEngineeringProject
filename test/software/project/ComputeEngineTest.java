@@ -1,3 +1,5 @@
+package software.project;
+
 import org.junit.Assert;
 import org.junit.Test;
 
