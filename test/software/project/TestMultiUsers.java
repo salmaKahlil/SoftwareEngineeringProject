@@ -12,7 +12,7 @@ import java.util.concurrent.Future;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
+
 
 public class TestMultiUsers {
 
@@ -20,8 +20,9 @@ public class TestMultiUsers {
 	
 	@Before
 	public void initializeComputeEngine() {
-		Data dataTest = Mockito.mock(Data.class);
-		ComputeEngine computeEngineTest = Mockito.mock(ComputeEngine.class);
+
+		Data dataTest = new DataImp();
+		ComputeEngine computeEngineTest = new ComputeEngineImp();
 		coordinator = new SystemCoordinatorImp(dataTest, computeEngineTest);
 	}
 
@@ -38,8 +39,8 @@ public class TestMultiUsers {
 		for (int i = 0; i < numThreads; i++) {
 			File singleThreadedOut = new File(singleThreadFilePrefix + i);
 			singleThreadedOut.createNewFile(); // Create the file
-			singleThreadedOut.deleteOnExit();
-			testUsers.get(i).run(singleThreadedOut.getCanonicalPath());
+			//singleThreadedOut.deleteOnExit();
+			testUsers.get(i).run(singleThreadedOut.getCanonicalPath()); //write the output
 			
 		}
 		
@@ -50,7 +51,7 @@ public class TestMultiUsers {
 		for (int i = 0; i < numThreads; i++) {
 			File multiThreadedOut = new File(multiThreadFilePrefix + i);
 			multiThreadedOut.createNewFile(); // Create the file
-			multiThreadedOut.deleteOnExit();
+			//multiThreadedOut.deleteOnExit();
 			String multiThreadOutputPath = multiThreadedOut.getCanonicalPath();
 			TestUser testUser = testUsers.get(i);
 			results.add(threadPool.submit(() -> testUser.run(multiThreadOutputPath)));
