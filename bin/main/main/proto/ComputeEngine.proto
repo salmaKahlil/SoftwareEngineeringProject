@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package compute_engine;
+
+service ComputeEngine {
+  rpc Compute (ComputeRequest) returns (ComputeResponse);
+}
+
+message ComputeRequest {
+  int32 value = 1;
+}
+
+message ComputeResponse {
+  string result = 1;
+}
