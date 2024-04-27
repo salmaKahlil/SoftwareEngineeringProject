@@ -15,8 +15,8 @@ public class SystemCoordinatorTest {
         SystemCoordinator coordinator = new SystemCoordinatorImp(dataTest, computeEngineTest);
 
         ComputeRequest requestTest = Mockito.mock(ComputeRequest.class);
-        IntegersFromTheUser inputConfig = new IntegersFromTheUser("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
-        OutputDetails outputConfig = new OutputDetails("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+        IntegersFromTheUser inputConfig = new IntegersFromTheUser("D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+        OutputDetails outputConfig = new OutputDetails("D:\\SoftwareEngineeringProject\\src\\software\\project\\output");
         requestTest = new ComputeRequestImp(inputConfig, outputConfig, ";");
 
         ComputeMessage result = coordinator.runComputeEngine(requestTest);

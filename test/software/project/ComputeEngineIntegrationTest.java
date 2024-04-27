@@ -13,8 +13,8 @@ public class ComputeEngineIntegrationTest {
         ComputeEngine engine = new ComputeEngineImp();
         Data testDs = new DataImp();
         SystemCoordinator coordinator = new SystemCoordinatorImp(testDs, engine);
-        IntegersFromTheUser input = new IntegersFromTheUser("");
-        OutputDetails output = new OutputDetails("");
+        IntegersFromTheUser input = new IntegersFromTheUser("D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+        OutputDetails output = new OutputDetails("D:\\SoftwareEngineeringProject\\src\\software\\project\\output");
        
 
         ComputeRequest mockRequest = Mockito.mock(ComputeRequest.class);

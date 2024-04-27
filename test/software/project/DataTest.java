@@ -12,7 +12,7 @@ public class DataTest {
     @Test
 	public void testDataIn() {
 		IntegersFromTheUser inputConfig = Mockito.mock(IntegersFromTheUser.class);
-		inputConfig =  new IntegersFromTheUser("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
+		inputConfig =  new IntegersFromTheUser("D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
 		ArrayList<Integer> test = new ArrayList<>();
 		test.add(1);
 		test.add(2);
