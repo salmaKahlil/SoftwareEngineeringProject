@@ -3,7 +3,8 @@ package software.project;
 import static org.mockito.Mockito.when;
 
 import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 public class ComputeEngineIntegrationTest {
@@ -12,8 +13,8 @@ public class ComputeEngineIntegrationTest {
         ComputeEngine engine = new ComputeEngineImp();
         Data testDs = new DataImp();
         SystemCoordinator coordinator = new SystemCoordinatorImp(testDs, engine);
-        IntegersFromTheUser input = new IntegersFromTheUser("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
-        OutputDetails output = new OutputDetails("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\output");
+        IntegersFromTheUser input = new IntegersFromTheUser("");
+        OutputDetails output = new OutputDetails("");
        
 
         ComputeRequest mockRequest = Mockito.mock(ComputeRequest.class);

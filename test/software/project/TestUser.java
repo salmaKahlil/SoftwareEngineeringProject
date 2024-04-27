@@ -13,7 +13,7 @@ public class TestUser {
 
 	public void run(String outputPath) {
 		String delimiter = ";";
-		String inputPath = "C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\test\\software\\project\\testInputFile";
+		String inputPath = "";
 		IntegersFromTheUser input = new IntegersFromTheUser(inputPath);
 		OutputDetails output = new OutputDetails(outputPath);
 		ComputeRequest newRequest = new ComputeRequestImp(input, output, delimiter);

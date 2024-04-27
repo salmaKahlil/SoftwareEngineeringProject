@@ -1,12 +1,13 @@
 package software.project;
 
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.junit.Assert;
-import org.junit.Test;
+
 
 public class SystemCoordinatorTest {
 
-    @Test   
+    @Test
     public void testRunComputeEngine() {
         Data dataTest = Mockito.mock(Data.class);
 		ComputeEngine computeEngineTest = Mockito.mock(ComputeEngine.class);
