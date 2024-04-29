@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class OutputDetails {
     
-    private String filePath;
+    private final String filePath;
 
     public OutputDetails(String filePath){
         this.filePath = filePath;

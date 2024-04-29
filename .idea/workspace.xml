@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/proto/Data.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/software/project/ComputeEngineClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/software/project/ComputeEngineServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/software/project/DataClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/software/project/DataServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/ComputationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/ComputationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/ComputationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/ComputationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/ComputationClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/ComputationServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/OutputDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/OutputDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +196,7 @@
       <workItem from="1714001997911" duration="3748000" />
       <workItem from="1714064664629" duration="5534000" />
       <workItem from="1714189820495" duration="7776000" />
-      <workItem from="1714346086029" duration="2879000" />
+      <workItem from="1714346086029" duration="6116000" />
     </task>
     <servers />
   </component>
