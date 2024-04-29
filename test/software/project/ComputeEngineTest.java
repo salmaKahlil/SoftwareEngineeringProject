@@ -1,15 +1,16 @@
 package software.project;
 
+
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 public class ComputeEngineTest {
 
     @Test
     public void testCompute() {
-        ComputeEngine engine = new ComputeEngineImp(); 
-		Assert.assertEquals("13", engine.compute(1, 25));
+        NewComputeEngineImp engine = new NewComputeEngineImp();
+		Assert.assertEquals("27780", engine.compute(5, 55555  ));
 
     }
 

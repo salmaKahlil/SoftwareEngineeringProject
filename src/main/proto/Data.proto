@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package Data;
+
+message IntegersFromTheUser {
+  repeated int32 inputConfig = 1;
+}
+
+message ComputeMessage {
+  enum Status {
+    SUCCESS = 0;
+    FAILURE = 1;
+  }
+  Status status = 1;
+}
+
+message OutputDetails {
+  string filePath = 1;
+  string delimiter = 2;
+  string result = 3;
+  string input = 4;
+}
+
+message ComputationEndMessageParameters {
+  OutputDetails resultDest = 1;
+  string input = 2;
+  string results = 3;
+}
+
+service Data {
+  rpc DataIn(IntegersFromTheUser) returns (ComputeMessage);
+  rpc ComputationEndMessage(ComputationEndMessageParameters) returns (ComputeMessage);
+}
