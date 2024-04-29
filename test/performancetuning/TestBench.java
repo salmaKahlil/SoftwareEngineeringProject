@@ -1,4 +1,4 @@
-package performanceTuning;
+package performancetuning;
 
 
 import org.junit.jupiter.api.Assertions;
