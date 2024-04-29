@@ -12,13 +12,14 @@ import java.util.concurrent.Future;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 
 public class TestMultiUsers {
 
 	private SystemCoordinator coordinator;
 	
-	@Before
+	@BeforeEach
 	public void initializeComputeEngine() {
 
 		Data dataTest = new DataImp();

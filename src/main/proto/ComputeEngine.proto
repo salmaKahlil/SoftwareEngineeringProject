@@ -1,4 +1,4 @@
-syntax = "proto3";
+
 
 package compute_engine;
 
@@ -7,9 +7,9 @@ service ComputeEngine {
 }
 
 message ComputeRequest {
-  int32 value = 1;
+  repeated int32 value = 1;
 }
 
 message ComputeResponse {
-  string result = 1;
+  optional string result = 1;
 }

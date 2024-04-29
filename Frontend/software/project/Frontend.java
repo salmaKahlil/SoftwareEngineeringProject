@@ -150,6 +150,17 @@
     
 //     public static void main(String[] args) {
 //         SwingUtilities.invokeLater(new Runnable() {
+//String target = "localhost:50051";  // Boilerplate TODO: make sure the server/port match the server/port you want to connect to
+//
+//ManagedChannel channel = Grpc.newChannelBuilder(target, InsecureChannelCredentials.create())
+//        .build();
+//        try {
+//ComputeEngineClient client = new ComputeEngineClient(channel); // Boilerplate TODO: update to this class name
+//            client.compute();
+//        } finally {
+//                channel.shutdownNow().awaitTermination(5, TimeUnit.SECONDS);
+//        }
+//                }
 //             public void run() {
 //                 new Frontend();
 //             }
