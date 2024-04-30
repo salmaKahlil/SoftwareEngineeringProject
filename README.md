@@ -28,9 +28,6 @@ The engine support multithreading with an upper bound of 4 threads running concu
 
 
 
-Certainly! Here's a professional paragraph you can include in your README:
-
-Performance Tuning of Computation Algorithm
 
 In the pursuit of optimizing computational efficiency, significant enhancements were made to the computation algorithm implemented in the ComputeEngineImp class. Recognizing the necessity for refinement, the algorithm underwent a
 transformation resulting in the creation 
