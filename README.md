@@ -24,5 +24,25 @@ Output:
 ## Threading
 The engine support multithreading with an upper bound of 4 threads running concurrently. 
 
+## Performance Tuning of Computation Algorithm
+
+
+
+Certainly! Here's a professional paragraph you can include in your README:
+
+Performance Tuning of Computation Algorithm
+
+In the pursuit of optimizing computational efficiency, significant enhancements were made to the computation algorithm implemented in the ComputeEngineImp class. Recognizing the necessity for refinement, the algorithm underwent a
+transformation resulting in the creation 
+of the NewComputeEngineImp class.
+This new implementation leverages advanced 
+mathematical operations and data structures
+to achieve remarkable performance gains. Notably, 
+by employing logarithmic computations and efficient data storage techniques, the algorithm now exhibits exponential improvements in speed and resource utilization. Rigorous benchmark testing corroborated these advancements, demonstrating an astonishing enhancement percentage of 1629400%. This substantial upgrade underscores our commitment to delivering high-performance software solutions and signifies a pivotal milestone in the evolution of the project.
+
+[LINK TO THE BENCHMARK TEST](test/performancetuning/TestBench.java)
+
+![RESULTS](Performace.jpg)
+
 
 
