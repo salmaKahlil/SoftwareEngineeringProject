@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="" />
+    <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,36 +57,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.BenchMarkTesting.testComputation.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BenchmarckTesting.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BenchmarckTesting.testComputation.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ComputeEngineIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ComputeEngineIntegrationTest.testComputeWorkflow.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ComputeEngineTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ComputeEngineTest.testCompute.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DataTest.testDataIn.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SoftwareEngineeringProject [:ComputeEngineServer.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestBench.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestBench.testComputation.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Network__Calls&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AUC/Downloads/sampleCodeImplementation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.BenchMarkTesting.testComputation.executor": "Run",
+    "Gradle.BenchmarckTesting.executor": "Run",
+    "Gradle.BenchmarckTesting.testComputation.executor": "Run",
+    "Gradle.ComputeEngineIntegrationTest.executor": "Run",
+    "Gradle.ComputeEngineIntegrationTest.testComputeWorkflow.executor": "Run",
+    "Gradle.ComputeEngineTest.executor": "Run",
+    "Gradle.ComputeEngineTest.testCompute.executor": "Run",
+    "Gradle.DataTest.testDataIn.executor": "Run",
+    "Gradle.SoftwareEngineeringProject [:ComputeEngineServer.main()].executor": "Run",
+    "Gradle.TestBench.executor": "Run",
+    "Gradle.TestBench.testComputation (1).executor": "Run",
+    "Gradle.TestBench.testComputation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Network__Calls",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/AUC/Downloads/sampleCodeImplementation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SoftwareEngineeringProject\src\software\project" />
@@ -89,7 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ComputeEngineTest.testCompute">
+  <component name="RunManager">
     <configuration name="ComputeEngineIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,7 +169,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestBench" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestBench.testComputation (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +182,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PerformanceTuning.TestBench&quot;" />
+            <option value="&quot;performancetuning.TestBench.testComputation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,10 +233,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ComputeEngineTest.testCompute" />
+        <item itemvalue="Gradle.TestBench.testComputation (1)" />
         <item itemvalue="Gradle.TestBench.testComputation" />
         <item itemvalue="Gradle.ComputeEngineTest" />
         <item itemvalue="Gradle.ComputeEngineIntegrationTest" />
-        <item itemvalue="Gradle.TestBench" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +268,7 @@
       <workItem from="1714189820495" duration="7776000" />
       <workItem from="1714346086029" duration="11716000" />
       <workItem from="1714368735883" duration="10775000" />
-      <workItem from="1714421513474" duration="7177000" />
+      <workItem from="1714421513474" duration="8076000" />
     </task>
     <servers />
   </component>
