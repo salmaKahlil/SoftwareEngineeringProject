@@ -3,7 +3,7 @@ package software.project;
 import java.util.ArrayList;
 import java.lang.Math;
 
-public class NewComputeEngineImp {
+public class NewComputeEngineImp implements ComputeEngine {
     public String compute(int digit, int upperLimit) {
         int length = (int) (Math.log10(upperLimit) + 1);
         ArrayList<Integer> upperLimitDigits = new ArrayList<>();

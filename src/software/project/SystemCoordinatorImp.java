@@ -20,9 +20,9 @@ public class SystemCoordinatorImp implements SystemCoordinator {
         String delimiter = request.getDelimeter(); 
         //ArrayList<Integer> nums = ds.dataIn(input);
         ArrayList<Integer> nums = new ArrayList<>();
-        ArrayList<Integer> inputt = new ArrayList<>();
-        inputt = ds.dataIn(input);
-        nums.addAll(inputt);
+        ArrayList<Integer> inputNums = new ArrayList<>();
+        inputNums = ds.dataIn(input);
+        nums.addAll(inputNums);
         Integer digit; 
         if (!nums.isEmpty()) {
             digit = nums.get(0);
