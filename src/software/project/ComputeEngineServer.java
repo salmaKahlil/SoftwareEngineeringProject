@@ -68,13 +68,17 @@ public class ComputeEngineServer {
             sc = new SystemCoordinatorImp(ds, computeEngine);
             IntegersFromTheUser inputConfig = new IntegersFromTheUser(request.getInputFilePath());
             OutputDetails outputConfig = new OutputDetails(request.getOutputFilePath());
-            String deliemer = request.getDelimeter();
-            ComputeRequestImp internalRequest = new ComputeRequestImp(inputConfig, outputConfig, deliemer);
+            String delimiter = request.getDelimeter();
+            ComputeRequestImp internalRequest = new ComputeRequestImp(inputConfig, outputConfig, delimiter);
             ComputeMessage result = sc.runComputeEngine(internalRequest);
 
 
 
-            ComputeResponse response = ComputeResponse.newBuilder()
+
+
+
+
+            ComputeResponse response = ComputeResponse.newBuilder().setStatusField(ComputeResponse.status.SUCCESS)
                     .build();
 
             responseObserver.onNext(response);

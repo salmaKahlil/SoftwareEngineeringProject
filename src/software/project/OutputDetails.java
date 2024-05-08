@@ -18,7 +18,6 @@ public class OutputDetails {
             writer.write(":");
             writer.write(result);
             writer.write(delimiter);
-            writer.write(" ");
 
         } catch (IOException e) {
             e.printStackTrace(); 

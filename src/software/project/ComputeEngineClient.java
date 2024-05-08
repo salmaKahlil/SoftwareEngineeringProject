@@ -24,24 +24,19 @@ public class ComputeEngineClient { // Boilerplate TODO: change to <servicename>C
     }
 
     // Boilerplate TODO: replace this method with actual client call/response logic
-    public void compute(String inputPath, String outputPath) {
+    public ComputeResponse compute(String inputPath, String outputPath, String delimiter) {
 
-        ComputeRequest request = ComputeRequest.newBuilder().setDelimeter(";")
+        ComputeRequest request = ComputeRequest.newBuilder().setDelimeter(delimiter)
                 .setInputFilePath(inputPath)
                 .setOutputFilePath(outputPath)
                 .build();
         ComputeEngine.ComputeResponse response;
-        try {
-            response = blockingStub.compute(request);
-        } catch (StatusRuntimeException e) {
-            return;
-        }
-//        if (response.) {
-//            System.err.println("Error: " + response.getErrorMessage());
-//        } else {
-        System.out.println("Compute result: " + response);
-//        }
-//    }
+
+        response = blockingStub.compute(request);
+
+
+        return response;
+
 
     }
 

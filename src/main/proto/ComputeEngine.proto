@@ -12,6 +12,7 @@ message ComputeResponse {
       SUCCESS = 0;
       FAILURE = 1;
   }
+  optional status statusField = 1;
 }
 
 

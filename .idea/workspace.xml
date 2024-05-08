@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/frontend/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/software/project/Frontend$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/software/project/Frontend$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/software/project/Frontend.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/software/project/Frontend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/ComputeEngine.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/ComputeEngine.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/Data.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/software/project/ComputeEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/ComputeEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/software/project/ComputeEngineClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/ComputeEngineClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/software/project/ComputeEngineServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/ComputeEngineServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/software/project/DataServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/software/project/NewComputeEngineImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/NewComputeEngineImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/OutputDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/OutputDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/software/project/output" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/software/project/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +79,7 @@
     &quot;Gradle.TestBench.testComputation.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Update&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Networks-and-Frontend&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/AUC/Downloads/proto-exercise1-solutions (1)&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -228,7 +216,8 @@
       <workItem from="1714421513474" duration="7177000" />
       <workItem from="1714955282002" duration="3536000" />
       <workItem from="1715024848576" duration="19307000" />
-      <workItem from="1715121362518" duration="8230000" />
+      <workItem from="1715121362518" duration="8421000" />
+      <workItem from="1715191476309" duration="12127000" />
     </task>
     <servers />
   </component>
@@ -249,12 +238,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/frontend/Application.java</url>
-          <line>2</line>
+          <line>6</line>
           <properties class="FileInputOutputGUI">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/frontend/Application.java</url>
+          <line>161</line>
+          <properties class="frontend.Application" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/software/project/ComputeEngineServer.java</url>
