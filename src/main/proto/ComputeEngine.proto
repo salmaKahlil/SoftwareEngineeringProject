@@ -5,6 +5,7 @@ message ComputeRequest {
   required string inputFilePath = 1;
   required string outputFilePath = 2;
   required string delimeter = 3;
+  required int32 digit= 4;
 }
 
 message ComputeResponse {

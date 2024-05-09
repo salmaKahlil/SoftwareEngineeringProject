@@ -7,7 +7,10 @@ import io.grpc.StatusRuntimeException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import javax.swing.JOptionPane;
 
@@ -24,6 +27,7 @@ public class Application extends JFrame {
     private static String delimiter;
     private static String outputFileName;
     private static String inputFilePath;
+    private static String digit;
     private static ComputeEngine.ComputeResponse result;
 
     private JButton startButton;
@@ -68,8 +72,11 @@ public class Application extends JFrame {
         int returnValue = fileChooser.showOpenDialog(null);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-            processInputFile(selectedFile.getAbsolutePath());
+            inputFilePath = selectedFile.getAbsolutePath();
+            showDigitDialog();
+
         }
+
     }
 
     private void showTypeNumbersDialog() {
@@ -79,14 +86,35 @@ public class Application extends JFrame {
 
         if (result == JOptionPane.OK_OPTION) {
             String input = inputTextArea.getText();
-            processInputNumbers(input);
+            String[] lines = input.split("\\n");
+            inputFilePath = "D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt";
+            for (String line : lines) {
+               try {
+                   try (BufferedWriter writer = new BufferedWriter(new FileWriter(inputFilePath, true))) {
+                       writer.write(line);
+                       writer.newLine();
+                   } catch (IOException e) {
+                       e.printStackTrace();
+                   }
+
+               } catch (NumberFormatException ex) {
+                   JOptionPane.showMessageDialog(null, "Invalid input: " + line);
+                   return;
+               }
+           }
+
+
+
+            showDigitDialog();
         }
     }
 
-    private void processInputFile(String filePath) {
-        inputFilePath = filePath;
+
+
+    private void processDigitInput() {
+
         outputFileName = JOptionPane.showInputDialog(null, "Enter output file name:");
-        System.out.println(outputFileName);
+
         if (outputFileName == null || outputFileName.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Output file name is required!");
             return;
@@ -95,20 +123,8 @@ public class Application extends JFrame {
 
     }
 
-    private void processInputNumbers(String input) {
 
-        outputFileName = JOptionPane.showInputDialog(null, "Enter output file name:");
-
-        if (outputFileName == null || outputFileName.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Output file name is required!");
-            return;
-        }
-        showDelimiterDialog();
-
-    }
-
-
-    private String showDelimiterDialog() {
+    private void showDelimiterDialog() {
 
         delimiter = JOptionPane.showInputDialog(null, "Enter delimiter (leave blank for none):");
         System.out.println(delimiter);
@@ -116,9 +132,25 @@ public class Application extends JFrame {
             delimiter = ";";
         }
         showComputeButton();
-        return delimiter;
 
     }
+    private void showDigitDialog() {
+
+        digit = JOptionPane.showInputDialog(null, "Enter The Digit of Interest: ");
+
+        if (digit == null || digit.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "A digit is required!");
+            return;
+        }
+        else if(Integer.valueOf(digit) > 9 || Integer.valueOf(digit) < 1){
+            JOptionPane.showMessageDialog(null, "Digit must be between 1 and 9 ");
+            return;
+
+        }
+        processDigitInput();
+
+    }
+
     private void showComputeButton() {
         computeButton = new JButton("Compute");
         computeButton.addActionListener(new ActionListener() {
@@ -129,6 +161,7 @@ public class Application extends JFrame {
 
 
                 JOptionPane.showMessageDialog(null, "The computation has been a " + result);
+                System.exit(0);
             }
 
 
@@ -147,7 +180,7 @@ public class Application extends JFrame {
 
         try {
             ComputeEngineClient client = new ComputeEngineClient(channel);
-            ComputeEngine.ComputeResponse result = client.compute(inputFilePath, outputFileName, delimiter);
+            ComputeEngine.ComputeResponse result = client.compute(inputFilePath, outputFileName, delimiter, Integer.valueOf(digit));
         } finally {
             try {
                 channel.shutdownNow().awaitTermination(5, TimeUnit.SECONDS);

@@ -24,9 +24,9 @@ public class ComputeEngineClient { // Boilerplate TODO: change to <servicename>C
     }
 
     // Boilerplate TODO: replace this method with actual client call/response logic
-    public ComputeResponse compute(String inputPath, String outputPath, String delimiter) {
+    public ComputeResponse compute(String inputPath, String outputPath, String delimiter, Integer digit) {
 
-        ComputeRequest request = ComputeRequest.newBuilder().setDelimeter(delimiter)
+        ComputeRequest request = ComputeRequest.newBuilder().setDelimeter(delimiter).setDigit(digit)
                 .setInputFilePath(inputPath)
                 .setOutputFilePath(outputPath)
                 .build();

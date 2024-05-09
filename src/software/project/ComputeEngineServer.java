@@ -69,7 +69,10 @@ public class ComputeEngineServer {
             IntegersFromTheUser inputConfig = new IntegersFromTheUser(request.getInputFilePath());
             OutputDetails outputConfig = new OutputDetails(request.getOutputFilePath());
             String delimiter = request.getDelimeter();
-            ComputeRequestImp internalRequest = new ComputeRequestImp(inputConfig, outputConfig, delimiter);
+            Integer digit = request.getDigit();
+
+
+            ComputeRequestImp internalRequest = new ComputeRequestImp(inputConfig, outputConfig, delimiter, digit);
             ComputeMessage result = sc.runComputeEngine(internalRequest);
 
 

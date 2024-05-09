@@ -13,10 +13,11 @@ public class TestUser {
 
 	public void run(String outputPath) {
 		String delimiter = ";";
-		String inputPath = "C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\test\\software\\project\\testInputFile";
+		Integer digit = 5;
+		String inputPath = "./test/software/project/testInputFile";
 		IntegersFromTheUser input = new IntegersFromTheUser(inputPath);
 		OutputDetails output = new OutputDetails(outputPath);
-		ComputeRequest newRequest = new ComputeRequestImp(input, output, delimiter);
+		ComputeRequest newRequest = new ComputeRequestImp(input, output, delimiter, digit);
 		coordinator.runComputeEngine(newRequest);
 
 		

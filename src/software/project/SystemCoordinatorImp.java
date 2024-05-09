@@ -1,6 +1,11 @@
 package software.project;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.*;
+
 
 public class SystemCoordinatorImp implements SystemCoordinator {
 
@@ -15,7 +20,7 @@ public class SystemCoordinatorImp implements SystemCoordinator {
     @Override
     public ComputeMessage runComputeEngine(ComputeRequest request){
     
-        IntegersFromTheUser input = request.getInputConfig(); 
+        IntegersFromTheUser input = request.getInputConfig();
         OutputDetails output = request.getOutputConfig(); 
         String delimiter = request.getDelimeter(); 
         //ArrayList<Integer> nums = ds.dataIn(input);
@@ -23,18 +28,24 @@ public class SystemCoordinatorImp implements SystemCoordinator {
         ArrayList<Integer> inputNums = new ArrayList<>();
         inputNums = ds.dataIn(input);
         nums.addAll(inputNums);
-        Integer digit; 
-        if (!nums.isEmpty()) {
-            digit = nums.get(0);
-        } else {
+        Integer digit = request.getDigit();
 
-            digit = 0;
 
-        }
-        String result;
+        ExecutorService executor = Executors.newFixedThreadPool(4);
+
         for (Integer num : nums) {
-            result = ce.compute(digit, num);
-            output.outputDetailsMethod(delimiter, result, String.valueOf(num));
+            Callable<String> computation = () -> {
+                String result = ce.compute(digit, num);
+                return result;
+            };
+
+            Future<String> future = executor.submit(computation);
+            try {
+                String result = future.get();
+                output.outputDetailsMethod(delimiter, result, String.valueOf(num));
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+            }
         }
         return ComputeMessage.SUCCESS;
         
