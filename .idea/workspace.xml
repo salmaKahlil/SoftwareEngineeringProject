@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +256,7 @@
       <workItem from="1715209281294" duration="7000" />
       <workItem from="1715222732888" duration="10962000" />
       <workItem from="1715234380457" duration="36000" />
-      <workItem from="1715311129233" duration="339000" />
+      <workItem from="1715311129233" duration="643000" />
     </task>
     <servers />
   </component>
@@ -278,7 +277,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/frontend/Application.java</url>
-          <line>199</line>
+          <line>203</line>
           <properties class="frontend.Application" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
