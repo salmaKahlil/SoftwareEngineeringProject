@@ -147,10 +147,9 @@ public class Application extends JFrame {
             JOptionPane.showMessageDialog(null, "A digit is required!");
             return;
         }
-        else if(Integer.valueOf(digit) > 9 || Integer.valueOf(digit) < 1){
+        else if(Integer.valueOf(digit) > 9 || Integer.valueOf(digit) < 1) {
             JOptionPane.showMessageDialog(null, "Digit must be between 1 and 9 ");
             return;
-
         }
         processDigitInput();
 
