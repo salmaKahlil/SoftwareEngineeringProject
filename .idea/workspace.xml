@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/System.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Performace.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Performace.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Salma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/System Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/main/proto/ComputeEngine.proto" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/main/proto/ComputeEngine.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/ComputeRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/software/project/ComputeRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/ComputeRequestImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/software/project/ComputeRequestImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/OutputDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/software/project/OutputDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/SystemCoordinatorImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/software/project/SystemCoordinatorImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/output" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/software/project/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/result" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/software/project/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/software/project/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/software/project/ComputeEngineIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/software/project/ComputeEngineIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/software/project/ComputeEngineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/software/project/ComputeEngineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/software/project/DataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/software/project/DataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/software/project/SystemCoordinatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/software/project/SystemCoordinatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/software/project/TestMultiUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/software/project/TestMultiUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/test/software/project/TestUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/software/project/TestUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/DataClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/software/project/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +174,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SystemCoordinatorTest.testRunComputeEngine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestBench.testComputation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -162,7 +187,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;software.project.SystemCoordinatorTest.testRunComputeEngine&quot;" />
+            <option value="&quot;performancetuning.TestBench.testComputation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestBench.testComputation" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.ComputeEngineServer" />
         <item itemvalue="Gradle.ComputeEngineIntegrationTest.testComputeWorkflow" />
         <item itemvalue="Gradle.TestMultiUsers" />
-        <item itemvalue="Gradle.SystemCoordinatorTest.testRunComputeEngine" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +281,8 @@
       <workItem from="1715209281294" duration="7000" />
       <workItem from="1715222732888" duration="10962000" />
       <workItem from="1715234380457" duration="36000" />
-      <workItem from="1715311129233" duration="1627000" />
+      <workItem from="1715311129233" duration="2909000" />
+      <workItem from="1715316016743" duration="4019000" />
     </task>
     <servers />
   </component>
