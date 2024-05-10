@@ -4,9 +4,18 @@ import io.grpc.Grpc;
 import io.grpc.InsecureChannelCredentials;
 import io.grpc.ManagedChannel;
 import io.grpc.StatusRuntimeException;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
+import javax.swing.JTextArea;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
+import java.awt.BorderLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -160,7 +169,7 @@ public class Application extends JFrame {
                 System.out.println(result);
 
 
-                JOptionPane.showMessageDialog(null, "The computation has been a " + result);
+                JOptionPane.showMessageDialog(null, "The computation has been a SUCCESS");
                 System.exit(0);
             }
 
