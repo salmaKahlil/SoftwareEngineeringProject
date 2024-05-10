@@ -5,18 +5,28 @@ import io.grpc.Grpc;
 import io.grpc.InsecureChannelCredentials;
 import io.grpc.ManagedChannel;
 import io.grpc.StatusRuntimeException;
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
+import javax.swing.JTextArea;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
+import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+import javax.swing.JOptionPane;
 
 import compute_engine.ComputeEngine;
+import io.grpc.ManagedChannel;
+import io.grpc.Grpc;
+import io.grpc.InsecureChannelCredentials;
 import software.project.ComputeEngineClient;
 import software.project.ComputeMessage;
 
@@ -84,7 +94,7 @@ public class Application extends JFrame {
         if (result == JOptionPane.OK_OPTION) {
             String input = inputTextArea.getText();
             String[] lines = input.split("\\n");
-            inputFilePath = "./src/software/project/test.txt";
+            inputFilePath = "D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt";
             for (String line : lines) {
                 try {
                     try (BufferedWriter writer = new BufferedWriter(new FileWriter(inputFilePath, true))) {
@@ -103,6 +113,7 @@ public class Application extends JFrame {
             showDigitDialog();
         }
     }
+
 
 
     private void processDigitInput() {
@@ -193,6 +204,8 @@ public class Application extends JFrame {
                 new Application();
             }
         });
+
+
 
     }
 }
