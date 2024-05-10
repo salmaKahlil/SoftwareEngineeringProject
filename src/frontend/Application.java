@@ -94,7 +94,7 @@ public class Application extends JFrame {
         if (result == JOptionPane.OK_OPTION) {
             String input = inputTextArea.getText();
             String[] lines = input.split("\\n");
-            inputFilePath = "D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt";
+            inputFilePath = "./src/software/project/test.txt";
             for (String line : lines) {
                 try {
                     try (BufferedWriter writer = new BufferedWriter(new FileWriter(inputFilePath, true))) {
