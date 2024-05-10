@@ -1,33 +1,22 @@
 package frontend;
+
 import io.grpc.Channel;
 import io.grpc.Grpc;
 import io.grpc.InsecureChannelCredentials;
 import io.grpc.ManagedChannel;
 import io.grpc.StatusRuntimeException;
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
-import javax.swing.JTextArea;
-import javax.swing.JScrollPane;
-import javax.swing.SwingUtilities;
-import java.awt.BorderLayout;
-import java.awt.event.ActionListener;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
-
-
+import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import javax.swing.JOptionPane;
-
 
 import compute_engine.ComputeEngine;
-import io.grpc.ManagedChannel;
-import io.grpc.Grpc;
-import io.grpc.InsecureChannelCredentials;
 import software.project.ComputeEngineClient;
 import software.project.ComputeMessage;
 
@@ -83,7 +72,6 @@ public class Application extends JFrame {
             File selectedFile = fileChooser.getSelectedFile();
             inputFilePath = selectedFile.getAbsolutePath();
             showDigitDialog();
-
         }
 
     }
@@ -96,28 +84,25 @@ public class Application extends JFrame {
         if (result == JOptionPane.OK_OPTION) {
             String input = inputTextArea.getText();
             String[] lines = input.split("\\n");
-            inputFilePath = "D:\\SoftwareEngineeringProject\\src\\software\\project\\test.txt";
+            inputFilePath = "./src/software/project/test.txt";
             for (String line : lines) {
-               try {
-                   try (BufferedWriter writer = new BufferedWriter(new FileWriter(inputFilePath, true))) {
-                       writer.write(line);
-                       writer.newLine();
-                   } catch (IOException e) {
-                       e.printStackTrace();
-                   }
+                try {
+                    try (BufferedWriter writer = new BufferedWriter(new FileWriter(inputFilePath, true))) {
+                        writer.write(line);
+                        writer.newLine();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
 
-               } catch (NumberFormatException ex) {
-                   JOptionPane.showMessageDialog(null, "Invalid input: " + line);
-                   return;
-               }
-           }
-
-
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Invalid input: " + line);
+                    return;
+                }
+            }
 
             showDigitDialog();
         }
     }
-
 
 
     private void processDigitInput() {
@@ -208,8 +193,6 @@ public class Application extends JFrame {
                 new Application();
             }
         });
-
-
 
     }
 }

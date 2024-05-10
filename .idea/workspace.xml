@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +256,7 @@
       <workItem from="1715209281294" duration="7000" />
       <workItem from="1715222732888" duration="10962000" />
       <workItem from="1715234380457" duration="36000" />
-      <workItem from="1715311129233" duration="643000" />
+      <workItem from="1715311129233" duration="945000" />
     </task>
     <servers />
   </component>
@@ -277,8 +277,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/frontend/Application.java</url>
-          <line>203</line>
-          <properties class="frontend.Application" method="main">
+          <line>162</line>
+          <properties class="frontend.Application">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -300,7 +300,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
