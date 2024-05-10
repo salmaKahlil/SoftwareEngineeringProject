@@ -1,15 +1,23 @@
 
-
 package compute_engine;
 
-service ComputeEngine {
-  rpc Compute (ComputeRequest) returns (ComputeResponse);
-}
-
 message ComputeRequest {
-  repeated int32 value = 1;
+  required string inputFilePath = 1;
+  required string outputFilePath = 2;
+  required string delimeter = 3;
+  required int32 digit= 4;
 }
 
 message ComputeResponse {
-  optional string result = 1;
+  enum status{
+      SUCCESS = 0;
+      FAILURE = 1;
+  }
+  optional status statusField = 1;
+}
+
+
+service ComputeService {
+  // Define the Compute RPC method
+  rpc Compute(ComputeRequest) returns (ComputeResponse);
 }

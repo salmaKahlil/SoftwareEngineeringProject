@@ -1,12 +1,13 @@
 package software.project;
 
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.junit.Assert;
-import org.junit.Test;
+
 
 public class SystemCoordinatorTest {
 
-    @Test   
+    @Test
     public void testRunComputeEngine() {
         Data dataTest = Mockito.mock(Data.class);
 		ComputeEngine computeEngineTest = Mockito.mock(ComputeEngine.class);
@@ -14,9 +15,10 @@ public class SystemCoordinatorTest {
         SystemCoordinator coordinator = new SystemCoordinatorImp(dataTest, computeEngineTest);
 
         ComputeRequest requestTest = Mockito.mock(ComputeRequest.class);
-        IntegersFromTheUser inputConfig = new IntegersFromTheUser("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
-        OutputDetails outputConfig = new OutputDetails("C:\\Users\\AUC\\OneDrive\\Documents\\GitHub\\SoftwareEngineeringProject\\src\\software\\project\\test.txt");
-        requestTest = new ComputeRequestImp(inputConfig, outputConfig, ";");
+        IntegersFromTheUser inputConfig = new IntegersFromTheUser("./src/software/project/test.txt");
+        OutputDetails outputConfig = new OutputDetails("SystemCoordinatorTestOuput");
+
+        requestTest = new ComputeRequestImp(inputConfig, outputConfig, ";", 5);
 
         ComputeMessage result = coordinator.runComputeEngine(requestTest);
 

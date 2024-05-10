@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c8affe3-f1a5-4c7a-ba3d-e18024d85e3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +63,21 @@
     &quot;Gradle.ComputeEngineTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ComputeEngineTest.testCompute.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.DataTest.testDataIn.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SoftwareEngineeringProject [:Application.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SoftwareEngineeringProject [:ComputeEngineClient.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SoftwareEngineeringProject [:ComputeEngineServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SoftwareEngineeringProject [:DataServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SoftwareEngineeringProject [:SystemCoordinatorClient.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SoftwareEngineeringProject [:SystemCoordinatorServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemCoordinatorTest.testRunComputeEngine.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TestBench.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TestBench.testComputation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestMultiUsers.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Networks-and-Frontend&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AUC/Downloads/sampleCodeImplementation&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AUC/Downloads/proto-exercise1-solutions (1)&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,8 +98,34 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ComputeEngineTest.testCompute">
-    <configuration name="ComputeEngineIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="frontend.Application" />
+      <module name="gradle-8.6.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComputeEngineServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="software.project.ComputeEngineServer" />
+      <module name="gradle-8.6.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="software.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComputeEngineIntegrationTest.testComputeWorkflow" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -105,7 +138,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;software.project.ComputeEngineIntegrationTest&quot;" />
+            <option value="&quot;software.project.ComputeEngineIntegrationTest.testComputeWorkflow&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +149,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ComputeEngineTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SystemCoordinatorTest.testRunComputeEngine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;software.project.ComputeEngineTest&quot;" />
+            <option value="&quot;software.project.SystemCoordinatorTest.testRunComputeEngine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,7 +173,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ComputeEngineTest.testCompute" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestMultiUsers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,55 +186,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;software.project.ComputeEngineTest.testCompute&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestBench" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;PerformanceTuning.TestBench&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestBench.testComputation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;PerformanceTuning.TestBench.testComputation&quot;" />
+            <option value="&quot;software.project.TestMultiUsers&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -227,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ComputeEngineTest.testCompute" />
-        <item itemvalue="Gradle.TestBench.testComputation" />
-        <item itemvalue="Gradle.ComputeEngineTest" />
-        <item itemvalue="Gradle.ComputeEngineIntegrationTest" />
-        <item itemvalue="Gradle.TestBench" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.ComputeEngineServer" />
+        <item itemvalue="Gradle.ComputeEngineIntegrationTest.testComputeWorkflow" />
+        <item itemvalue="Gradle.TestMultiUsers" />
+        <item itemvalue="Gradle.SystemCoordinatorTest.testRunComputeEngine" />
       </list>
     </recent_temporary>
   </component>
@@ -264,10 +249,61 @@
       <workItem from="1714346086029" duration="11716000" />
       <workItem from="1714368735883" duration="10775000" />
       <workItem from="1714421513474" duration="7177000" />
+      <workItem from="1714955282002" duration="3536000" />
+      <workItem from="1715024848576" duration="19307000" />
+      <workItem from="1715121362518" duration="8421000" />
+      <workItem from="1715191476309" duration="12403000" />
+      <workItem from="1715209281294" duration="7000" />
+      <workItem from="1715222732888" duration="10962000" />
+      <workItem from="1715234380457" duration="36000" />
+      <workItem from="1715311129233" duration="1627000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Frontend/software/project/Frontend.java</url>
+          <line>68</line>
+          <properties class="Frontend">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/frontend/Application.java</url>
+          <line>197</line>
+          <properties class="frontend.Application" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/software/project/ComputeEngineIntegrationTest.java</url>
+          <line>12</line>
+          <properties class="software.project.ComputeEngineIntegrationTest" method="testComputeWorkflow">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/software/project/ComputeEngineServer.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/software/project/SystemCoordinatorImp.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
